@@ -1,0 +1,19 @@
+[ req ]
+default_bits        = 4096
+default_md        = sha512
+distinguished_name  = subject
+req_extensions      = req_ext
+encrypt_key           = no
+prompt = no
+[ subject ]
+countryName             =  US
+stateOrProvinceName        = NY
+localityName                = New York
+organizationName  =  Example
+organizationalUnitName         = IT dept
+commonName                  = example.org
+emailAddress                = support@example.com
+[ req_ext ]
+subjectAltName = @alt_names
+[ alt_names ]
+DNS.1 = example.org
