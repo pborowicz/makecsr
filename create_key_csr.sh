@@ -7,6 +7,10 @@
 #set -x
 #trap read debug
 
+#make directories if missing
+mkdir -p csr
+mkdir -p keys
+
 #######################
 ### Define Variables ##
 #######################
